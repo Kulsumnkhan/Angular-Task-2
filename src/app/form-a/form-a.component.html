@@ -1,0 +1,41 @@
+<!-- <p>form-a works!</p> -->
+
+<h3 class="bg-primary text-white p-2 text-center"><em>Form using dropdown menu.</em></h3>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter your first name.">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter your last name.">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="option">How should we contact you?</label>
+                <select class="form-control" id="option" (change)="changeDetails($event)">
+                <option value="">Select an option</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone Number</option>
+            </select>
+            </div>
+        </div>
+        <div class="col-6 d-none" id="emailContainer">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email.">
+            </div>
+        </div>
+        <div class="col-6 d-none" id="phoneContainer">
+            <div class="form-group">
+                <label for="contact">Phone Number</label>
+                <input type="text" name="contact" id="contact" class="form-control" placeholder="Enter your phone number.">
+            </div>
+        </div>
+    </div>
+</div>
